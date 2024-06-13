@@ -1,0 +1,96 @@
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0e7db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .app-container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total-balance{
+    background-color: #ff8069;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  .total-balance h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: #ff8069;
+    font-weight: bolder;
+  }
+  
+  .total-balance p{
+    margin: 10px 0 0;
+    font-size: 2rem;
+    background-color: #ff8069;
+    font-weight: bolder;
+  }
+
+.today-spending{
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.today-spending h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.today-spending p{
+  margin: 10px 0 0;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+  .percentage-variation {
+    margin-top: 10px;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .percentage-variation p {
+    font-size: 1.5rem;
+  }
+
+  .flags {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .flags img {
+    width: 60px;
+    margin: 0 20px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    cursor: pointer;
+  }

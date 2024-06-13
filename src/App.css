@@ -1,0 +1,14 @@
+.App {
+  align-items: center;
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+}
+
+.balance-total, .expenses-chart, .today-spending, .percentage-variation {
+  margin: 20px;
+}
+
+
