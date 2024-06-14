@@ -20,9 +20,14 @@ ChartJS.register(
 
 const ExpensesChart = () => {
   const chartData = import.meta.env.VITE_INITIAL_CHART_DATA.split(',').map(Number);
-  const maxExpense = Math.max(...chartData);
+  const maxExpense = Math.max(...chartData);//to get a differnt color when te expense is highest
 
-  const getBarColors =() =>{
+
+  // to get the weekly expenses
+
+  const totalExpenses = chartData.reduce((acc, val) => acc + val, 0);
+
+  const getBarColors = () => {
     return chartData.map(value => value === maxExpense ? '#6295A2' : 'rgba(255, 99, 132, 0.5)');
   }
   const data = {
@@ -36,7 +41,12 @@ const ExpensesChart = () => {
     ],
   };
 
-  return <Bar data={data} />;
+  return (
+    <>
+    <Bar data={data} />;
+    <h2><mark>Total Weekly Expenses: {totalExpenses} €</mark></h2>
+    </>
+  )
 };
 
 export default ExpensesChart;
