@@ -11,6 +11,7 @@ const App = () => {
       <Flags />
       <div className="main-content">
         <BalanceTotal />
+        <div className="text"> <h2>Last Week Expenses</h2></div> 
         <ExpensesChart />
         <TodaySpending />
         <PercentageVariation />

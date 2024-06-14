@@ -94,3 +94,9 @@
     margin: 10px 10px;
     cursor: pointer;
   }
+  .text{
+    color: brown;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+  }
