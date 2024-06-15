@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import { Bar } from 'react-chartjs-2';
 import {Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
@@ -13,6 +15,9 @@ ChartJS.register(
 );
 
 const ExpensesChart = () => {
+   
+const { t} = useTranslation();
+
   const chartData = import.meta.env.VITE_INITIAL_CHART_DATA.split(',').map(Number);
   const maxExpense = Math.max(...chartData);//to get a differnt color when te expense is highest
 
@@ -28,7 +33,7 @@ const ExpensesChart = () => {
     labels: ['Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
     datasets: [
       {
-        label: 'Expenses',
+        label: t('Expenses'),
         data: chartData,
         backgroundColor: getBarColors(),
       },
@@ -38,7 +43,7 @@ const ExpensesChart = () => {
   return (
     <>
     <Bar data={data} />;
-    <h2><mark>Total Weekly Expenses: {totalExpenses} €</mark></h2>
+    <h2><mark>2.{t('Total Weekly Expenses')}: {totalExpenses} €</mark></h2>
     </>
   )
 };
