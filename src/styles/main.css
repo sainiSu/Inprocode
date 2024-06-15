@@ -100,3 +100,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
   }
+
+  .percentage-variation{
+     color: #d72f11;
+     text-align: right;
+     font-weight: bolder;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-decoration: underline;
+  }
