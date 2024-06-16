@@ -42,7 +42,7 @@ const { t} = useTranslation();
 
   return (
     <>
-    <Bar data={data} />;
+    <Bar data={data} />
     <h2><mark>2.{t('Total Weekly Expenses')}: {totalExpenses} €</mark></h2>
     </>
   )

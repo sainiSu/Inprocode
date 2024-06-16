@@ -22,7 +22,7 @@ const App = () => {
       <TodaySpending />
     </div>
     </>
-  );
+  )
 };
 
 export default App;
