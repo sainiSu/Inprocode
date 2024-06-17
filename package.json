@@ -12,7 +12,10 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "chart.js": "^4.4.3",
+<<<<<<< HEAD
     "currency.js": "^2.0.4",
+=======
+>>>>>>> 7bbdf0287f3cc33c4872462003c3ba5468a82d86
     "i18next": "^23.11.5",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",

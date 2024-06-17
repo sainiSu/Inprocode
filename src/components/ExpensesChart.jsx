@@ -1,4 +1,8 @@
 import { useTranslation } from 'react-i18next';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7bbdf0287f3cc33c4872462003c3ba5468a82d86
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
@@ -12,7 +16,13 @@ ChartJS.register(
 );
 
 const ExpensesChart = () => {
+<<<<<<< HEAD
   const { t } = useTranslation();
+=======
+   
+const { t} = useTranslation();
+
+>>>>>>> 7bbdf0287f3cc33c4872462003c3ba5468a82d86
   const chartData = import.meta.env.VITE_INITIAL_CHART_DATA.split(',').map(Number);
   const maxExpense = Math.max(...chartData);
 
@@ -26,7 +36,11 @@ const ExpensesChart = () => {
     labels: ['Mon', 'Tue', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
     datasets: [
       {
+<<<<<<< HEAD
         label: t('expenses'),
+=======
+        label: t('Expenses'),
+>>>>>>> 7bbdf0287f3cc33c4872462003c3ba5468a82d86
         data: chartData,
         backgroundColor: getBarColors(),
       },
@@ -35,8 +49,13 @@ const ExpensesChart = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <Bar data={data} />
       <h2><mark>{t('totalWeeklyExpenses')}: {totalExpenses} €</mark></h2>
+=======
+    <Bar data={data} />
+    <h2><mark>2.{t('Total Weekly Expenses')}: {totalExpenses} €</mark></h2>
+>>>>>>> 7bbdf0287f3cc33c4872462003c3ba5468a82d86
     </>
   );
 };
