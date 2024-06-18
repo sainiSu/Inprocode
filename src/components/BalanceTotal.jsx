@@ -3,7 +3,9 @@
 import { useTranslation } from 'react-i18next';
 
 const BalanceTotal = () => {
-  const { t } = useTranslation();
+
+  const { t } = useTranslation(); 
+
   const totalBalance = import.meta.env.VITE_INITIAL_BALANCE;
   
   return (
@@ -16,4 +18,3 @@ const BalanceTotal = () => {
 
 
 export default BalanceTotal;
-

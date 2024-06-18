@@ -16,7 +16,7 @@ const App = () => {
     <BalanceTotal />
     <div className="app-container">
       <div className="main-content">
-        <div className="text"> <h2>{t('Last Week Expenses')}</h2></div> 
+        <div className="text"> <h2>{t('lastWeekExpenses')}</h2></div> 
         <ExpensesChart />
       </div>
       <TodaySpending />
