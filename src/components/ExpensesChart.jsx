@@ -16,11 +16,11 @@ const ExpensesChart = () => {
   const [selectedDay, setSelectedDay] = useState(null);
 
   const getBarColors = () => {
-    return chartData.map(value => value === maxExpense ? '#6295A2' : 'rgba(255, 99, 132, 0.5)');
+    return chartData.map(value => value === maxExpense ? "#FC4100" : "#219C90");
   };
 
   const data = {
-    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thurusday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [
       {
         label:t('expenses'),
@@ -38,7 +38,40 @@ const ExpensesChart = () => {
         setSelectedDay(index);
       }
     },
-  };
+  
+  
+  scales: {
+    x: {
+      ticks: {
+        font: {
+          size: 20,
+          weight:'bolder',
+        },
+        color:"black",
+      },
+    },
+    y: {
+      ticks: {
+        font: {
+          size: 20,
+          weight:'bolder',
+        },
+        color:"black",
+      },
+    },
+  },
+  plugins: {
+    legend: {
+      labels: {
+        font: {
+          size: 18, 
+          weight:'bolder',
+        },
+        color:"black",
+      },
+    },
+  },
+};
 
   const getComparison = (index) => {
     if (index === 0) return t('noDataForComparisonWithPreviousDay');

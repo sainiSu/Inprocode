@@ -57,7 +57,7 @@ body {
 
 
 [data-theme='dark'] .app-container {
-  background: #444;
+  background: #9EB8D9;
 }
 
 .main-content {
@@ -76,8 +76,8 @@ body {
 }
 
 .theme-toggle-button img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
 }
 
