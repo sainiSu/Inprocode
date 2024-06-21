@@ -1,26 +1,36 @@
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0e7db;
+  background-color: var(--background-color);
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --background-color: #f0e7db;
+  --text-color: #000;
+}
+
+[data-theme='dark'] {
+  --background-color: #333;
+  --text-color: #fff;
 }
 
 .app-container {
+  max-width: 800px;
+  width: 100%;
   background: #fff;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 .total-balance{
@@ -45,34 +55,57 @@ body {
   font-weight: bolder;
 }
 
-.today-spending{
-color: black;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-width: 80%;
+
+[data-theme='dark'] .app-container {
+  background: #444;
 }
 
-.today-spending h2 {
-margin: 0;
-font-size: 1.5rem;
-font-weight: bolder;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.today-spending p{
-margin: 10px 0 0;
-font-size: 2rem;
-font-weight: bolder;
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.percentage-variation {
-  margin-top: 10px;
-  color: black;
-  font-weight: bolder;
+.theme-toggle-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 
-.percentage-variation p {
+.expense-chart {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.day-details {
+  margin-top: 20px;
+  background: var(--background-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.day-details h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.day-details p {
+  margin: 5px 0;
   font-size: 1.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .flags {
@@ -89,18 +122,3 @@ font-weight: bolder;
   margin: 10px 10px;
   cursor: pointer;
 }
-.text{
-  color: brown;
-  font-size: larger;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: underline;
-}
-
-.percentage-variation{
-   color: #d72f11;
-   text-align:justify;
-   font-weight: bolder;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-decoration: underline;
-}
-

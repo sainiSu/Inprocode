@@ -10,6 +10,9 @@ const resources = {
       lastWeekExpenses: "Last Week Expenses",
       expenses: "Expenses",
       totalWeeklyExpenses: "Total Weekly Expenses",
+      detailsFor: "Details For",
+      comparedToyesterday: "compared to yesterday",
+      noDataForComparisonWithPreviousDay: "No data for comparison with previous day"
     }
   },
   es: {
@@ -20,6 +23,9 @@ const resources = {
       lastWeekExpenses: "Gastos de la Semana Pasada",
       expenses: "Gastos",
       totalWeeklyExpenses: "Gastos Semanales Totales",
+      detailsFor: "Detalles para",
+      comparedToyesterday: "comparado con ayer",
+      noDataForComparisonWithPreviousDay:"No hay datos para comparar con el día anterior" 
     }
   },
   hi: {
@@ -30,6 +36,9 @@ const resources = {
       lastWeekExpenses: "पिछले सप्ताह के खर्चे",
       expenses: "खर्चे",
       totalWeeklyExpenses: "साप्ताहिक कुल खर्चे",
+      detailsFor: "के लिए विवरण",
+      comparedToyesterday: "कल की तुलना में",
+      noDataForComparisonWithPreviousDay: "पिछले दिन से तुलना के लिए कोई डेटा नहीं"
     }
   }
 };
