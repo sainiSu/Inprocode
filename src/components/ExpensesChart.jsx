@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const ExpensesChart = () => {
+const ExpensesChart = ({ currentWeek}) => {
   const { t } = useTranslation();
 
-  const chartData = import.meta.env.VITE_INITIAL_CHART_DATA.split(',').map(Number);
+  const chartData =currentWeek.chartData;
   const maxExpense = Math.max(...chartData);
 
   const totalExpenses = chartData.reduce((acc, val) => acc + val, 0);

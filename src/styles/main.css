@@ -39,6 +39,7 @@ body {
   border-radius: 20px;
   margin-bottom: 20px;
   width: 800px;
+  position: relative;
 }
 
 .total-balance h2 {
@@ -55,6 +56,28 @@ body {
   font-weight: bolder;
 }
 
+
+.balance-buttons {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.balance-button {
+  font-size: 2rem;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+}
+
+.balance-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 
 [data-theme='dark'] .app-container {
   background: #9EB8D9;
